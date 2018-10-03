@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="855.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxml1_login.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="556.0" fitWidth="857.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/paintt.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="525.0" layoutY="86.0" prefHeight="420.0" prefWidth="285.0" style="-fx-background-color: #9C2B27;">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#20c94a" layoutX="18.0" layoutY="132.0" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="255.0" promptText="username/email" unFocusColor="#d0cbcb" />
+            <JFXPasswordField focusColor="#3cc656" layoutX="16.0" layoutY="198.0" prefHeight="27.0" prefWidth="259.0" promptText="password" unFocusColor="#c3b7b7" />
+            <JFXButton layoutX="18.0" layoutY="281.0" prefHeight="27.0" prefWidth="255.0" style="-fx-background-color: #E45652;" text="Log In" textFill="#dad6d6">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="112.0" layoutY="42.0" text="Sign In" textFill="#d0cccc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="Paw" layoutX="91.0" layoutY="351.0" onAction="#handleButtonAction" text="Forgot Password?" textFill="#d0ccccfa" underline="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Hyperlink>
+            <JFXButton layoutX="18.0" layoutY="323.0" prefHeight="27.0" prefWidth="255.0" style="-fx-background-color: #E45652;" text="Sign Up" textFill="#dad6d6" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="145.0" layoutY="3.0" prefHeight="65.0" prefWidth="587.0" text="Welcome to your College Companion" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="820.0" layoutY="9.0" prefHeight="25.0" prefWidth="15.0" text="X" textFill="#030000">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
